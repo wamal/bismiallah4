@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+
+:root { --disk-height: 15%; --disk-width: 30%; --disk-left: 1.665%;
+}
+
+#div1 {
+	background-color: var(--disk-width);
+}
+
+.disk {
+	position: absolute;
+	height: var(--disk-height);
+	border-radius: 25px;
+	text-align: center;
+	z-index:2;
+	/* border-width: 1px;
+border-style: solid;
+border-color: rgb(128, 64, 64); */
+background-color:rgba(128, 64, 64, 0.6); 
+ opacity: 1;
+}
+#cmdRoomn {
+	top: 2%;
+	left: 2%;
+	width: 10%;
+height: 10%;
+z-index:2;
+}
+#feelingPain {
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	width: 40%;
+	height:60%;
+	
+	z-index:1;
+}
+#feelingPainImg {
+	position: absolute;
+	top: -70%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	
+	z-index:20;
+}
+#feelingPain2 {
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	width: 12%;
+	height:30%;
+	
+	z-index:30;
+}
+#feelingPainImg2 {
+	position: absolute;
+	top: -70%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	
+	z-index:20;
+}
+#explosionDiv {
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	width: 40%;
+	height:60%;
+	
+	z-index:20;
+}
+#explosionImg {
+	position: absolute;
+	top: -70%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	
+	z-index:20;
+}
+#robotDiv {
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	width: 10%;
+	height:40%;
+	
+	z-index:1;
+}
+#robotImg {
+	position: absolute;
+	top: -70%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	
+	z-index:1;
+}
+#disk0 {
+	top: 82%;
+	left: var(--disk-left);
+	width: var(--disk-width);
+	/* background: #000080; */
+}
+
+#disk1 {
+	top: calc(82% - var(--disk-height));
+	left: calc((33.3333% - calc(5 * var(--disk-width)/6))/2);
+	width: calc(5 * var(--disk-width)/6);
+	/* background: #800080; */
+}
+
+#disk2 {
+	top: calc(82% - 2 * var(--disk-height));
+	left: calc((33.3333% - calc(4 * var(--disk-width)/6))/2);
+	width: calc(4 * var(--disk-width)/6);
+/* 	background: #808000; */
+}
+
+#disk3 {
+	top: calc(82% - 3 * var(--disk-height));
+	left: calc((33.3333% - calc(3* var(--disk-width)/6))/2);
+	width:  calc(3 * var(--disk-width)/6);
+	/* background: #800000; */
+}
+
+#disk4 {
+	top: calc(82% - 4 * var(--disk-height));
+	left: calc((33.3333% - calc(2* var(--disk-width)/6))/2);
+	width:  calc(2 * var(--disk-width)/6);
+	/* background: #ff80ff; */
+}
+
+#disk5 {
+	top: calc(82% - 5 * var(--disk-height));
+	left: calc((33.3333% - calc(1* var(--disk-width)/6))/2);
+	width:  calc(1 * var(--disk-width)/6);
+	/* background: #0000ff; */
+}

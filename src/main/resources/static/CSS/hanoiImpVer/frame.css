@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+.frame {
+	position: absolute;
+	border-color: black;
+	height: 100%;
+	width: 33%;
+	z-index:1;
+}
+
+.desert {
+	position: absolute;
+	border-color: black;
+	height: 100%;
+	width: 100%;
+}
+#arrow {
+	position: absolute;
+	top:-20%;
+	left:20%;
+/* 	background-color:cyan; */
+		height: 30%;
+	width: 30%;
+	visibility: hidden;
+	z-index:2;
+}
+#frame0 {
+	left:0;
+	background-color:rgba(223, 145, 102, 0.5);
+	
+}
+#frame1 {
+	left:33.333%;
+	background-color:yellow;
+}
+#frame2 {
+	left:66.666%;
+	background-color:green;
+}

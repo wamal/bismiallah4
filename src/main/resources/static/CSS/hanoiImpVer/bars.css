@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+
+.bar {
+	position: absolute;
+/* 	background: red; */
+	height: 70%;
+	width: 1%;
+}
+
+.barr {
+	position: absolute;
+	/* border-color: black; */
+	height: 100%;
+	width: 16.66%;
+}
+
+
+#barr0 {
+	top: 0%;
+	left: 0%;
+	/* background: #a1a1a1; */
+}
+
+#barr1 {
+	top: 0%;
+	left: 16.66%;
+	/* background: #949494; */
+}
+
+#barr2 {
+	top: 0%;
+	left: 33.3332%;
+	/* background: #a1a1a1; */
+}
+
+#barr3 {
+	top: 0%;
+	left: 49.9998%;
+	/* background: #949494; */
+}
+
+#barr4 {
+	top: 0%;
+	left: 66.6664%;
+	/* background: #a1a1a1; */
+}
+
+#barr5 {
+	top: 0%;
+	left: 83.333%;
+	/* background: #949494; */
+}
+
+
+
+#bar0 {
+	top: 20%;
+	left: 16.1666%;
+}
+
+#bar1 {
+	top: 20%;
+	left: 49.4998%;
+}
+
+#bar2 {
+	top: 20%;
+	left: 82.833%;
+}
+
+#barH {
+	position: absolute;
+	/* background: red; */
+	height: 1%;
+	width: 96%;
+	top: 90%;
+	left: 2%;
+}

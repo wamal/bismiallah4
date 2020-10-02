@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+:root { 
+    --smiley-left: 1%;
+    --smiley-width0: 15.5%;
+    --smiley-width1: 18.8%;
+    --smiley-width2: 23.75%;
+    --smiley-width3: 32%;
+    --smiley-width4: 48.5%;
+    --smiley-width5: 98%;
+}
+.sadSmiley0 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width0);
+	cursor: pointer;
+	padding: 0px;
+	 z-index:3;
+	
+}
+
+.sadSmiley1 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width1);
+	cursor: pointer;
+	padding: 0px;
+	
+}
+
+.sadSmiley2 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width2);
+	cursor: pointer;
+	padding: 0px;
+
+}
+
+.sadSmiley3 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width3);
+	cursor: pointer;
+	padding: 0px;
+	
+}
+
+.sadSmiley4 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width4);
+	cursor: pointer;
+	padding: 0px;
+	
+}
+
+.sadSmiley5 {
+	position: absolute;
+	top: 5%;
+	height: 90%;
+	width: var(--smiley-width5);
+	cursor: pointer;
+	padding: 0px;
+		 z-index:3;
+	
+}
+#nAb01 {
+	left: var(--smiley-left);
+}
+
+#nAb02 {
+ 	left: calc(2 * var(--smiley-left) + var(--smiley-width0)) 
+}
+
+#nAb03 {
+	left: calc(3 * var(--smiley-left) + 2*var(--smiley-width0))
+}
+
+#nAb04 {
+	left: calc(4 * var(--smiley-left) + 3*var(--smiley-width0))
+}
+#nAb05 {
+	left: calc(5 * var(--smiley-left) + 4*var(--smiley-width0))
+}
+#nAb06 {
+	left: calc(6 * var(--smiley-left) + 5*var(--smiley-width0))
+}
+#nAb11 {
+	left: var(--smiley-left);
+}
+#nAb12 {
+ 	left: calc(2 * var(--smiley-left) + var(--smiley-width1)) 
+}
+#nAb13 {
+	left: calc(3 * var(--smiley-left) + 2*var(--smiley-width1))
+}
+#nAb14 {
+	left: calc(4 * var(--smiley-left) + 3*var(--smiley-width1))
+}
+#nAb15 {
+	left: calc(5 * var(--smiley-left) + 4*var(--smiley-width1))
+}
+#nAb21 {
+	left: var(--smiley-left);
+}
+#nAb22 {
+ 	left: calc(2 * var(--smiley-left) + var(--smiley-width2)) 
+}
+#nAb23 {
+	left: calc(3 * var(--smiley-left) + 2*var(--smiley-width2))
+}
+
+#nAb24 {
+	left: calc(4 * var(--smiley-left) + 3*var(--smiley-width2))
+}
+#nAb31 {
+	left: var(--smiley-left);
+}
+#nAb32 {
+ 	left: calc(2 * var(--smiley-left) + var(--smiley-width3)) 
+	
+}
+#nAb33 {
+	left: calc(3 * var(--smiley-left) + 2*var(--smiley-width3))
+}
+#nAb41 {
+	left: var(--smiley-left);
+}
+#nAb42 {
+ 	left: calc(2 * var(--smiley-left) + var(--smiley-width4)) 
+}
+#nAb51 {
+ left: var(--smiley-left);
+}

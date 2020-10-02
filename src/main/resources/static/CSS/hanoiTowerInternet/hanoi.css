@@ -1,0 +1,136 @@
+#container {
+	/* position: absolute; */
+	position: absolute; 
+	top: 60px;
+	left: 60px;
+	border: 5px solid #400080;
+	height: 350px;
+	width: 760px;
+	background: #808000;
+}
+
+#bar0 {
+	position: absolute;
+	top: 100px;
+	left: 130px;
+	height: 200px;
+	width: 30px;
+}
+
+#bar1 {
+	position: absolute;
+	top: 100px;
+	left: 360px;
+	height: 200px; 
+	width: 30px;
+}
+
+#bar2 {
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	height: 200px;
+	width: 30px;
+}
+
+.disk {
+	padding: 0px;
+	margin: 0;
+	position: absolute;
+/* 	border: 1px solid gray; */
+	height: 26px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+#ll {
+	position:absolute;
+	top: 40%;
+	left: 10px;
+	background: red;
+	width: 50%;
+	height:100%
+}
+/* left of disk0 at 35px; left = 130 (bar0 left) -w/2 + 15 (bar width/2)  */
+#disk0 {
+	top: 274px;
+	left: 35px;
+	background: #DDEEFE;
+	width: 220px;
+}
+
+#disk1 {
+	top: 248px;
+	left: 55px;
+	background: #008000;
+	width: 180px;
+}
+
+#disk2 {
+	top: 222px;
+	left: 75px;
+	background: #400080;
+	width: 140px;
+}
+
+#disk3 {
+	top: 196px;
+	left: 95px;
+	background: #400000;
+	width: 100px;
+}
+
+#disk4 {
+	top: 170px;
+	left: 115px;
+	background: #8000ff;
+	width: 60px;
+}
+
+#bottombar {
+	position: absolute;
+	top: 300px;
+	left: 10px;
+	background: grey;
+	border: 1px solid black;
+	height: 30px;
+	width: 740px;
+}
+option{
+	background: grey;
+}
+select{
+	background: grey;
+}
+label {
+	float: right;
+	width: 100px;
+	margin-top: 8px;
+}
+
+button {
+	float: right;
+	margin-top: 26px;
+	margin-right: 16px;
+	padding: 2px 8px;
+	height: 28px;
+	background: grey;
+}
+h1{
+text-align: center;
+}
+img {
+	height: 200px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+} /* for towers (bars) */
+.insideImg {
+	z-index: 10;
+	position: absolute;
+	border: 0;
+	top: -4%;
+	height: 50%;
+	width: 30px;
+}

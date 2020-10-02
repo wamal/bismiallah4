@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="/CSS/hanoiImpVer/hanoiImpVer.css">
+
+</head>
+<body>
+	<div id="menu">
+		<input type="radio" id="practiceMode" name="practiceMode"
+			value="practiceMode"> <img id="settingsP"
+			src="/img/myVersionHanoiTower/seetings.gif">
+		<div id="increaseDiv">
+			<img id="increD" src="/img/myVersionHanoiTower/increasePicture.png">
+		</div>
+		<div id="decreaseDiv">
+			<img id="decD" src="/img/myVersionHanoiTower/decreasePicture.png">
+		</div>
+		<img id="cmdRoomn" src="/img/myVersionHanoiTower/commandRoom.webp">
+		<img id="mission" src="/img/myVersionHanoiTower/mission.webp"> <img
+			id="practice" src="/img/myVersionHanoiTower/practice.webp">
+	</div>
+	<div id="container">
+		<img id="arrow" src="/img/myVersionHanoiTower/curvedArrow.webp">
+		<div id="barH"></div>
+		
+	
+		<div id="frame0" class="frame">
+			<img id="desert0" class="desert"
+				src="/img/myVersionHanoiTower/desert.jpg" draggable="false">
+		</div>
+		
+		<div id="frame1" class="frame">
+			<img id="beach3" class="desert"
+				src="/img/myVersionHanoiTower/playa.gif" draggable="false">
+		</div>
+		
+			<div id="frame2" class="frame">
+			<!--  <img id="desert2" class="desert"
+				src="/img/myVersionHanoiTower/desert.jpgm" draggable="false">  -->
+		</div>
+		<div id="barr0" class="barr"></div>
+		<div id="barr1" class="barr"></div>
+		<div id="barr2" class="barr"></div>
+		<div id="barr3" class="barr"></div>
+		<div id="barr4" class="barr"></div>
+		<div id="barr5" class="barr"></div>
+		<div id="bar1" class="bar"></div>
+		<div id="bar0" class="bar"></div>
+		<div id="bar2" class="bar"></div>
+		<div id="robotDiv"  class="diskn" draggable="false" hidden=true>
+			<img id="robotImg" src="/img/myVersionHanoiTower/helicopter.webp">
+		</div>
+		<div id="feelingPain"  class="diskn" draggable="false" hidden=true>
+			<img id="feelingPainImg" src="/img/myVersionHanoiTower/fail.webp">
+		</div>
+		
+			<div id="feelingPain2"  class="diskn" draggable="false" hidden=true>
+			<img id="feelingPainImg2" src="/img/myVersionHanoiTower/pain2.webp">
+		</div>
+		<div id="explosionDiv"  class="diskn" draggable="false" hidden=true>
+			<img id="explosionImg" src="/img/myVersionHanoiTower/explosion2.webp">
+		</div>
+		<div id="disk5" class="disk" draggable="true">
+		
+			<img id="nAb51" class="sadSmiley5"
+				src="/img/myVersionHanoiTower/fear.webp">
+				
+		</div>
+		<div id="disk4" class="disk" draggable="true">
+			<img id="nAb41" class="sadSmiley4"
+				src="/img/myVersionHanoiTower/emojiSad3.webp"> <img id="nAb42"
+				class="sadSmiley4" src="/img/myVersionHanoiTower/emojiSad3.webp">
+		</div>
+		<div id="disk3" class="disk">
+			<img id="nAb31" class="sadSmiley3"
+				src="/img/myVersionHanoiTower/sadCat.webp"> <img id="nAb32"
+				class="sadSmiley3" src="/img/myVersionHanoiTower/sadCat.webp">
+			<img id="nAb33" class="sadSmiley3"
+				src="/img/myVersionHanoiTower/sadCat.webp">
+		</div>
+		<div id="disk2" class="disk">
+			<img id="nAb21" class="sadSmiley2"
+				src="/img/myVersionHanoiTower/sadSmiley.webp"> <img id="nAb22"
+				class="sadSmiley2" src="/img/myVersionHanoiTower/sadSmiley.webp">
+			<img id="nAb23" class="sadSmiley2"
+				src="/img/myVersionHanoiTower/sadSmiley.webp"> <img id="nAb24"
+				class="sadSmiley2" src="/img/myVersionHanoiTower/sadSmiley.webp">
+		</div>
+		<div id="disk1" class="disk">
+			<img id="nAb11" class="sadSmiley1"
+				src="/img/myVersionHanoiTower/emojiSad5.webp"> <img id="nAb12"
+				class="sadSmiley1"
+				src="/img/myVersionHanoiTower/normalSmileyGiFtr.webp"> <img
+				id="nAb13" class="sadSmiley1" src="/img/myVersionHanoiTower/de.webp">
+			<img id="nAb14" class="sadSmiley1"
+				src="/img/myVersionHanoiTower/smilyC.webp"> <img id="nAb15"
+				class="sadSmiley1" src="/img/myVersionHanoiTower/fear.webp">
+
+		</div>
+		<div id="disk0" class="disk">
+			<img id="nAb01" class="sadSmiley0"
+				src="/img/myVersionHanoiTower/bored.png"> <img id="nAb02"
+				class="sadSmiley0" src="/img/myVersionHanoiTower/emojiSad2.webp">
+			<img id="nAb03" class="sadSmiley0"
+				src="/img/myVersionHanoiTower/de.webp"> <img id="nAb04"
+				class="sadSmiley0" src="/img/myVersionHanoiTower/bored.png"> <img
+				id="nAb05" class="sadSmiley0"
+				src="/img/myVersionHanoiTower/emojiSad3.webp"> <img id="nAb06"
+				class="sadSmiley0" src="/img/myVersionHanoiTower/emojiSad1.webp">
+		</div>
+	</div>
+	
+	<audio id="squeezingAudio">
+		<source src="/audio/noGodPlease.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+	<audio id="deathAudio">
+		<source src="/audio/Death.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+	<audio id="computerAudio">
+		<source src="/audio/coputerS.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="missionAudio">
+		<source src="/audio/missionAudio.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+<audio id="helicopterAudio2">
+		
+		<source src="/audio/helicopDesc2.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+<audio id="helicopterAudio1">
+		
+		<source src="/audio/helicopter.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="Explosion">
+		
+		<source src="/audio/explosion2.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+<audio id="helicopterAudio">
+		
+		<source src="/audio/helicopter.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+	<audio id="bloopAudio">
+		
+		<source src="/audio/Bloop.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<script src="/js/hanoInternet/hanoi2.js"></script>
+	<!-- <script src="/js/hanoInternet/setNumberOfDiscsEvents.js"></script> -->
+</body>
+</html>

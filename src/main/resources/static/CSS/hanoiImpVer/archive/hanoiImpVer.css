@@ -1,0 +1,193 @@
+@charset "ISO-8859-1";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bar {
+	position: absolute;
+	background: red;
+	height: 70%;
+	width: 1%;
+}
+
+.barr {
+	position: absolute;
+	border-color: black;
+	height: 100%;
+	width: 16.66%;
+}
+
+#menu {
+	border-radius: 4rem 4rem 0px 0px;
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	background: #0080c0;
+	height: 10%;
+	width: 70%;
+	z-index: 1;
+}
+
+#increD {
+	position: absolute;
+	top: 13%;
+	left: 4%;
+	cursor:cell;
+	height: 65%;
+	width: 5%;
+}
+#decD:active{
+	transform:translateY(20%);
+}
+
+#increD:active{
+	transform:translateY(20%);
+}
+#decD {
+	position: absolute;
+	top: 13%;
+	left: 11%;
+	height: 65%;
+	width: 5%;
+	cursor:pointer;
+}
+
+#nAb01 {
+	position: absolute;
+	top: 0%;
+	left: 3%;
+	height: 300%;
+	width: 30%;
+	cursor:pointer;
+}
+
+#nAb02 {
+	position: absolute;
+	top: 0%;
+	left: 20%;
+	height: 300%;
+	width: 30%;
+	cursor:pointer;
+}
+#barr0 {
+	top: 0%;
+	left: 0%;
+	background: #a1a1a1;
+}
+
+#barr1 {
+	top: 0%;
+	left: 16.66%;
+	background: #949494;
+}
+
+#barr2 {
+	top: 0%;
+	left: 33.3332%;
+	background: #a1a1a1;
+}
+
+#barr3 {
+	top: 0%;
+	left: 49.9998%;
+	background: #949494;
+}
+
+#barr4 {
+	top: 0%;
+	left: 66.6664%;
+	background: #a1a1a1;
+}
+
+#barr5 {
+	top: 0%;
+	left: 83.333%;
+	background: #949494;
+}
+
+.disk {
+	position: absolute;
+	height: 8%;
+	border-radius: 25px;
+	text-align: center;
+}
+
+#disk0 {
+	top: 82%;
+	left: 3%;
+	width: 27%;
+	background: #000080;
+}
+
+#disk1 {
+	top: 74%;
+	left: 5%;
+	width: 23%;
+	background: #800080;
+}
+
+#disk2 {
+	top: 66%;
+	left: 7%;
+	width: 19%;
+	background: #808000;
+}
+
+#disk3 {
+	top: 58%;
+	left: 9%;
+	width: 15%;
+	background: #800000;
+}
+
+#disk4 {
+	top: 50%;
+	left: 11%;
+	width: 11%;
+	background: #ff80ff;
+}
+
+#disk5 {
+	top: 42%;
+	left: 13%;
+	width: 7%;
+	background: #0000ff;
+}
+
+#bar0 {
+	top: 20%;
+	left: 16.1666%;
+}
+
+#bar1 {
+	top: 20%;
+	left: 49.4998%;
+}
+
+#bar2 {
+	top: 20%;
+	left: 82.833%;
+}
+
+#barH {
+	position: absolute;
+	background: red;
+	height: 1%;
+	width: 96%;
+	top: 90%;
+	left: 2%;
+}
+
+#container {
+	border-radius: 20px;
+	top: 15%;
+	left: 15%;
+	position: absolute;
+	background: green;
+	height: 70%;
+	width: 70%;
+}

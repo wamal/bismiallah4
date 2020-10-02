@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+#container {
+	top: 40px;
+	left: 10px;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	background: yellow;
+}
+
+#animate3 {
+	width: 50px;
+	height: 50px;
+	top: 110px;
+	left: 10px;
+	position: absolute;
+	background-color: brown;
+}
+
+#animate2 {
+	width: 50px;
+	height: 50px;
+	top: 60px;
+	left: 10px;
+	position: absolute;
+	background-color: green;
+}
+
+#animate1 {
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	background-color: red;
+}
+</style>
+<body>
+
+	<p>
+		<button onclick="myMove1()">Click Me1</button>
+		<button onclick="myMove2()">Click Me2</button>
+		<button onclick="movediv()">Click Me3</button>
+	</p>
+	<div id="container">
+		<div id="animate1"></div>
+		<div id="animate2"></div>
+		<div id="animate3"></div>
+	</div>
+
+	<script>
+		var adiv = document.getElementById('animate3')
+		var div = document.getElementById('animate2')
+		div.innerHTML = div.offsetLeft + "," + div.offsetTop
+		var toppos = adiv.offsetTop
+		var leftpos = adiv.offsetLeft
+		function movediv() {
+			console.log("inside move:" + leftpos + "," + toppos)
+			adiv.innerHTML=adiv.offsetLeft + "," + adiv.offsetTop
+			if (leftpos < 350) {
+				leftpos += 0.1
+				toppos += 0.1
+			}
+			adiv.style.left = leftpos + 'px'
+			adiv.style.top = toppos + 'px'
+			requestAnimationFrame(movediv)
+		}
+
+		function wrapMove(div) {
+			var leftpos = div.offsetLeft
+			var toppos = div.offsetTop
+			console.log("inside wrap:" + leftpos + "," + toppos)
+			movediv()
+			function movediv() {
+				if (leftpos < 350) {
+					leftpos += 0.1
+					toppos += 0.1
+				}
+
+				div.style.left = leftpos + 'px'
+				div.style.top = toppos + 'px'
+				requestAnimationFrame(movediv)
+			}
+		}
+		
+		function myMove1() {
+			wrapMove(document.getElementById('animate1'))
+			moveWithParam(document.getElementById('animate2'))
+			movediv()
+		}
+
+		function myMove2() {
+			wrapMove(document.getElementById('animate2'))
+		}
+
+		function myMoveb() {
+			var elem = document.getElementById("animate");
+			var pos = 0;
+			var id = setInterval(frame, 40);
+			function frame() {
+				if (pos == 350) {
+					clearInterval(id);
+				} else {
+					pos++;
+					elem.style.top = pos + "px";
+					elem.style.left = pos + "px";
+					document.getElementById("animate").innerHTML = pos
+				}
+			}
+		}
+		function moveWithParam(div) {
+			
+			var leftpos = div.offsetLeft
+			var toppos = div.offsetTop
+			div.innerHTML=div.offsetLeft + "," + div.offsetTop
+			if (leftpos < 350) {
+				leftpos += 0.1
+				toppos += 0.1
+			}
+			adiv.style.left = leftpos + 'px'
+			adiv.style.top = toppos + 'px'
+			requestAnimationFrame(function(){ // call requestAnimationFrame again with parameters
+				moveWithParam(div)
+	        })
+		}
+		
+		/************************************************Promise Example************************************* */
+		var isMomHappy = true;
+
+		// Promise
+		var willIGetNewPhone = new Promise(
+		    function (resolve, reject) {
+		        if (isMomHappy) {
+		            var phone = {
+		                brand: 'Samsung',
+		                color: 'black'
+		            };
+		            resolve(phone);
+		        } else {
+		            var reason = new Error('mom is not happy');
+		            reject(reason);
+		        }
+		    }
+		);
+
+		/* willIGetNewPhone
+		        .then( fulfilled=>   console.log("brand:"+fulfilled.brand+" ,color: "+fulfilled.color))
+		        .catch(error =>console.log(error.message)) */
+		// call our promise
+		var askMom =  ()=> {
+		    willIGetNewPhone
+		        .then( fulfilled=>   console.log("brand:"+fulfilled.brand+" ,color: "+fulfilled.color))
+		        .catch(error =>console.log(error.message))
+		}
+/****************Call back with unkown number of parameters*******************/
+ function ff(a, callback,b,c,d){
+	console.log(a+callback(b,c,d))
+}
+  
+  function print(b,c,d){
+	  return b+c+d
+  }
+  function printt(c,d){
+	  return c+d
+  }
+  ff(" hi",print," donal"," trump"," us president")
+ff(" hi from second function",printt," donal"," trump")
+/******************************Set Interval with this********************************/		
+	myArray = ['zero', 'one', 'two'];
+//alert(myArray[0])
+		myArray.myMethod = function (sProperty) {
+		alert("arguments[0]="+arguments[0])
+		alert("arguments.length="+arguments.length)
+		alert("this[sProperty]="+this[sProperty])
+		alert("this="+this)
+			    alert(arguments.length > 0 ? this[sProperty] : this);
+		};
+		
+		 function   fonc(sProperty) {
+			alert("arguments[0]="+arguments[0]+"arguments[1]="+arguments[1])
+			alert("arguments.length="+arguments.length)
+			alert("this[sProperty]="+this[sProperty])
+			alert("this="+this)
+				    alert(arguments.length > 0 ? this[sProperty] : this);
+			};
+
+			//fonc(89,98,90);
+	//	myArray.myMethod(); // prints "zero,one,two"
+		//myArray.myMethod(1); // prints "one"
+		//setTimeout(myArray.myMethod, 1000); // prints "[object Window]" after 1 second
+		//setTimeout(myArray.myMethod, 1500, "1"); // prints "undefined" after 1,5 seconds
+		// passing the 'this' object with .call won't work
+		// because this will change the value of this inside setTimeout itself
+		// while we want to change the value of this inside myArray.myMethod
+		// in fact, it will be an error because setTimeout code expects this to be the window object:
+		//setTimeout.call(myArray, myArray.myMethod, 2000); // error: "NS_ERROR_XPC_BAD_OP_ON_WN_PROTO: Illegal operation on WrappedNative prototype object"
+		//setTimeout.call(myArray, myArray.myMethod, 2500, 2); // same error
+	</script>
+
+</body>
+</html>

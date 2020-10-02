@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+@import "disks.css"; 
+@import "bars.css"; 
+@import "birds.css"; 
+@import "frame.css"; 
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#menu {
+	border-radius: 4rem 4rem 0px 0px;
+	position: absolute;
+	top: 1%;
+	left: 5%;
+	background:rgba(223, 145, 102, 0.5);
+	height: 14%;
+	width: 90%;
+	z-index: 1;
+}
+#increaseDiv {
+	position: absolute;
+	top: 13%;
+	left: 8%;
+	cursor:cell;
+	height: 65%;
+	width: 5%;
+}
+#increD {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	cursor:cell;
+	height: 100%;
+	width: 100%;
+}
+#settingsP {
+	position: absolute;
+	top: 13%;
+	left: 3%;
+	cursor:cell;
+	height: 65%;
+	width: 5%;
+}
+
+#practiceMode {
+	position: absolute;
+	top: 31%;
+	left: 83%;
+	cursor:cell;
+	height: 25%;
+	width: 5%;
+}
+#decD:active{
+	transform:translateY(20%);
+}
+
+#increD:active{
+	transform:translateY(20%);
+}
+#decreaseDiv {
+	position: absolute;
+	top: 13%;
+	left: 15%;
+	height: 65%;
+	width: 5%;
+	cursor:pointer;
+}
+#decD {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	cursor:pointer;
+}
+#cmdRoomn {
+	position: absolute;
+	top:-10%;
+	left: 88%;
+	height: 100%;
+	width: 10%;
+	cursor:pointer;
+}
+#practice {
+	position: absolute;
+	top:0%;
+	left: 60%;
+	height: 100%;
+	width: 10%;
+	cursor:pointer;
+}
+#mission {
+	position: absolute;
+	top:0%;
+	left: 75%;
+	height: 100%;
+	width: 10%;
+	cursor:pointer;
+}
+#container {
+	border-radius: 20px;
+	top: 15%;
+	left: 5%;
+	position: absolute;
+/* 	background: green; */
+	height: 80%;
+	width: 90%;
+	overflow:hidden;
+}

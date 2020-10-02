@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tower of Hanoi</title>
+<link rel="stylesheet" type="text/css"
+	href="/CSS/hanoiTowerInternet/hanoi.css" />
+
+<script src="/js/hanoInternet/hanoiInternet.js"></script>
+
+
+
+</head>
+<body>
+	<h1>hanoi tower</h1>
+	<div id="container">
+
+
+		<div id="bar0">
+			<img src="/img/Bar2.png" />
+		</div>
+
+		<div id="bar1">
+			<img src="/img/Bar2.png" />
+		</div>
+
+		<div id="bar2">
+			<img src="/img/Bar2.png" />
+		</div>
+		<div id="bottombar"></div>
+
+		<div class="disk" id="disk0">
+			<img class="insideImg" style="left: 95px;" src="/img/Bar2.png" />
+		</div>
+		<div class="disk" id="disk1">
+			<img class="insideImg" style="left: 75px;" src="/img/Bar2.png" />
+		</div>
+		<div class="disk" id="disk2">
+			<img class="insideImg" style="left: 55px;" src="/img/Bar2.png" />
+		</div>
+		<div class="disk" id="disk3">
+			<img class="insideImg" style="left: 35px;" src="/img/Bar2.png" />
+		</div>
+		<div class="disk" id="disk4">
+			<img class="insideImg" style="left: 15px;" src="/img/Bar2.png" />
+		</div>
+
+		<button onclick="executeHanoi()">Start</button>
+
+		<label>Speed <select id="speedSelectList">
+				<option value="1">fast</option>
+				<option value="10">medium</option>
+				<option value="20">slow</option>
+		</select>
+		</label> <label>No. of Disks<select id="diskSelectList">
+				<option value="5">5 disks</option>
+				<option value="4">4 disks</option>
+				<option value="3">3 disks</option>
+		</select>
+		</label>
+	</div>
+
+</body>
+</html>
